@@ -10,7 +10,19 @@
   </head>
   <body>
     <header>
-	    <div>Chat all night, chat all day</div>
+      <nav>
+      <div class="nav-wrapper teal lighten-4">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+      </nav>
+      <%# <a class="btn-floating pulse"><i class="material-icons">menu</i></a> %>
+      <%# <a class="btn-floating pulse"><i class="material-icons">cloud</i></a> %>
+      <%# <a class="btn-floating pulse"><i class="material-icons">edit</i></a> %>
     </header>
     <main role="main" class="container">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>

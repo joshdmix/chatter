@@ -1,17 +1,11 @@
-defmodule ChatterWeb.MainView do
+defmodule ChatterWeb.GithubDeployView do
   use Phoenix.LiveView
 
   def render(assigns) do
-    ~L"""
-    <div>
-    <div>
-    <%= @deploy_step %>
-    </div>
-    </div>
-    """
+    Chatter.PageView.render("github_deploy.html", assigns)
   end
 
   def mount(_session, socket) do
-    {:ok, assign(socket, deploy_step: "Okay")}
+    {:ok, assign(socket, deploy_step: "ready")}
   end
 end
